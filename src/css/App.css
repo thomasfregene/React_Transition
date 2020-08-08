@@ -73,13 +73,13 @@
 /*=======================================
             TRANSITIONS BASIC 
 ========================================*/
-
+/* 
 .square{
   background: red;
   height: 100px;
   opacity: 1;
   transition: all 1s ease;
-}
+} */
 
 .square.square-entering{
   opacity: 1; 
@@ -102,6 +102,36 @@
 /*=======================================
                 CSSTRANSITIONS
 ========================================*/
+
+
+.square{
+  background: red;
+  height: 100px;
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+
+.square.false{
+  background: #feaaa3;
+  transform: translateX(-100%);
+}
+
+.square.true{
+  transform: translateX(0%);
+}
+
+/* .square-enter.square-enter-active{
+  background: blue;
+} */
+
+.square.square-enter-done{
+  background: blue;
+}
+
+.square-exit.square-exit-active{
+  background: green;
+}
+
 
 /*=======================================
                 TRANSITIONS GROUP 
